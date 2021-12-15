@@ -23,7 +23,8 @@ import org.json.*;
 
 @RestController
 public class UserController {
-	
+
+
 	@Autowired
 	private UserRepositoy userRepository;
 	
@@ -36,8 +37,8 @@ public class UserController {
 
 	@GetMapping("/messages")
 	public Iterable<Message> getAllMessages()
-	{	
-		
+	{
+
 		return messageRespository.findAll();
 	}
 	
